@@ -4,7 +4,7 @@
   "author": "aap82",
   "main": "hyperion-white-dimmer",
   "files": [
-    "hyperion-white-dimmer-coffee.coffee",
+    "hyperion-white-dimmer.coffee",
     "README.md",
     "hyperion-white-dimmer-config-schema.coffee"
   ],
