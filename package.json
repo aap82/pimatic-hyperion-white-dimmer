@@ -1,0 +1,24 @@
+{
+  "name": "pimatic-hyperion-white-dimmer",
+  "description": "The plugin description",
+  "author": "aap82",
+  "main": "hyperion-white-dimmer",
+  "files": [
+    "hyperion-white-dimmer-coffee.coffee",
+    "README.md",
+    "hyperion-white-dimmer-config-schema.coffee"
+  ],
+  "version": "0.1.0",
+  "private": true,
+
+  "configSchema": "hyperion-white-dimmer-config-schema.coffee",
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "pimatic": "^0.9"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  }
+}
