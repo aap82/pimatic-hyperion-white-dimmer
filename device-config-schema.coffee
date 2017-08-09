@@ -1,16 +1,21 @@
 module.exports =
   title: "pimatic-nest device config schemas"
-  NestPresence:
-    title: "Nest Home/Away Status"
+  extensions: ["xAttributeOptions"]
+  HyperionDimmer:
+    title: "Dimmer to control white backlight of Hyperion"
     type: "object"
     properties:
-      structure_id:
-        description: "Structure ID for the Presence Sensor"
+      host:
+        description: "Host of the Hyperion Daemon"
         type: "string"
-  NestThermostat:
-    title: "Nest Thermostat"
-    type: "object"
-    properties:
-      device_id:
-        description: "The Nest API thermostat id"
-        type: "string"
+        required: yes
+        default: "localhost"
+      port:
+        description: "Port on host running Hyperion Daemon"
+        type: "number"
+        default: 19444
+      maxBrightness:
+        description: "The maximum brightness up to 100"
+        type: "number"
+        default: 100
+

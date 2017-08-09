@@ -10,9 +10,9 @@
   ],
   "version": "0.1.0",
   "private": true,
-
   "configSchema": "hyperion-white-dimmer-config-schema.coffee",
   "dependencies": {
+    "color": "^2.0.0"
   },
   "peerDependencies": {
     "pimatic": "^0.9"
