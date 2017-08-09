@@ -1,6 +1,5 @@
 module.exports =
   title: "pimatic-nest device config schemas"
-  extensions: ["xAttributeOptions"]
   HyperionDimmer:
     title: "Dimmer to control white backlight of Hyperion"
     type: "object"

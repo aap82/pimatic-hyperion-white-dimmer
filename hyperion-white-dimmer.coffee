@@ -52,10 +52,6 @@ module.exports = (env) ->
       return
 
     constructor: (@config, lastState) ->
-      @config.xAttributeOptions = [
-        name: 'last_level'
-        hidden: true
-      ]
       {@id, @name, @host, @port, @maxBrightness} = @config
       @baseStr = "hyperion-remote --address #{@host}:#{@port}"
       @attributes['last_level'] =
